@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>task_1_11_1</title>
+<style type="text/css">
+#mainDiv{
+	width:100%;
+	height:auto;
+}
+.listFont{
+	font-size:40px;
+	color:#000000;
+	font:"黑体";
+}
+#guideDiv ul{
+	list-style-type:none;
+}
+#guideDiv li{
+	float:left;
+	margin-left:60px;
+}
+
+#guideDiv ul li label:hover{
+	
+	border:2px solid #6699FF;
+	
+	
+}
+
+.tableFont{
+	font-size:30px;
+	font:"微软雅黑";
+	font-weight:bold;
+}
+
+.partDivCSS{
+	width:300px;
+	height:300px;
+}
+
+.fenlanDiv{
+	font-size:25px;
+	font:"微软雅黑";
+	color:#999999;
+}
+
+.hide{
+	display:none;
+}
+
+.on{
+	font-size:40px;
+	color:#000000;
+	font:"黑体";
+
+}
+
+</style>
+
+<script type="text/javascript">
+
+window.onload = function()
+{
+
+var guideDiv = document.getElementById('guideDiv');
+var ul = guideDiv.getElementsByTagName('ul')[0];
+var list = ul.getElementsByTagName('li');
+var div = guideDiv.getElementsByTagName('div');
+for(var i=0,len=list.length;i<len;i++)
+{
+list[i].index = i;
+list[i].onclick = function()
+{
+for(var j=0;j<len;j++)
+{
+
+list[j].className = "" ;
+div[j].className = "hide" ;
+
+}
+this.className = "on" ;
+div[this.index].className = "" ;
+
+}
+
+};
+
+
+}
+
+</script>
+
+</head>
+
+<body >
+
+<div id="mainDiv">
+
+
+<div id="bannerDiv1" style="background-color:#66CCFF; width:100%; height:100px; ">
+<b><label id="backLbl" style="font-size:40px;color:#FFFFFF; position:relative; top:30%; font:'微软雅黑';"><a href="http://ife.baidu.com" style="color:#FFFFFF; text-decoration:none">&lt;返回</a></label>
+</b>
+<b><label style="font-size:40px;color:#FFFFFF; font:'微软雅黑';position:relative;top:30%;left:40%">这是标题</label></b>
+</div>
+
+
+<div id="guideDiv" style="width:100%;height:auto; margin-top:5px; float:left;">
+
+<ul style="display:flex;justify-content:space-between;align-items: center;">
+<li class="listFont" style="cursor:pointer">校园</li>
+<li class="listFont" style="cursor:pointer">科技</li>
+<li class="listFont" style="cursor:pointer">动漫</li>
+<li class="listFont" style="cursor:pointer">军事</li>
+<li class="listFont" style="cursor:pointer">电视</li>
+</ul><br/>
+
+<div style="height:auto; width:auto;text-align:center; margin-left:10%"><img src="school.jpg" /></div>
+<div style="height:auto; width:auto;text-align:center; margin-left:10%" class="hide"><img src="technologe.jpg" /></div>
+<div style="height:auto; width:auto;text-align:center; margin-left:10%" class="hide"><img src="cartoon.jpg" /></div>
+<div style="height:auto; width:auto;text-align:center; margin-left:10%" class="hide"><img src="army.jpg" /></div>
+<div style="height:auto; width:auto;text-align:center; margin-left:10%" class="hide"><img src="television.jpg" /></div>
+
+</div>
+
+
+
+
+<div id="signDiv" style="width:100%; margin-top:5px; ">
+<table id="noteTable" width="100%">
+<tr align="center"><td><img src="note.jpg" width="80px" height="80px" /></td><td><img src="note.jpg" width="80px" height="80px" /></td><td><img src="note.jpg" width="80px" height="80px" /></td><td><img src="note.jpg" width="80px" height="80px" /></td><td><img src="note.jpg" width="80px" height="80px" /></td></tr>
+<tr align="center" class="tableFont"><td>标签</td><td>标签</td><td>标签</td><td>标签</td><td>标签</td></tr>
+</table>
+</div>
+<div style=" margin-top:5px; width:100%; height:auto">
+<hr style="border:2px; color:#000000; width:100%; height:2px" />
+</div>
+
+
+<div id="partDiv" style="width:100%;height:auto;margin-top:5px;display:flex;justify-content:space-between;align-items: center;">
+
+<div id="partDiv1" class="partDivCSS" style="border:1px solid #000000">
+<img src="animal.jpg" alt="animal" style="width:auto; height:auto; position:relative; margin-left:30%; margin-top:20%" />
+<div style="position:relative; margin-top:10px; text-align:center " class="listFont">分栏一</div>
+<div style="position:relative; margin-top:10px; text-align:center" class="fenlanDiv">分栏小标题</div>
+</div>
+
+
+<div id="partDiv2" class="partDivCSS"  style="border:1px solid #000000">
+<img src="animal.jpg" alt="animal" style="width:auto; height:auto; position:relative; margin-left:30%; margin-top:20%" />
+<div style="position:relative; margin-top:10px; text-align:center " class="listFont">分栏二</div>
+<div style="position:relative; margin-top:10px; text-align:center" class="fenlanDiv">分栏小标题</div>
+</div>
+
+<div id="partDiv3" class="partDivCSS"  style="border:1px solid #000000">
+<img src="animal.jpg" alt="animal" style="width:auto; height:auto; position:relative; margin-left:30%; margin-top:20%" />
+<div style="position:relative; margin-top:10px; text-align:center " class="listFont">分栏三</div>
+<div style="position:relative; margin-top:10px; text-align:center" class="fenlanDiv">分栏小标题</div>
+</div>
+
+<div id="partDiv4" class="partDivCSS"  style="border:1px solid #000000">
+<img src="animal.jpg" alt="animal" style="width:auto; height:auto; position:relative; margin-left:30%; margin-top:20%" />
+<div style="position:relative; margin-top:10px; text-align:center " class="listFont">分栏四</div>
+<div style="position:relative; margin-top:10px; text-align:center" class="fenlanDiv">分栏小标题</div>
+</div>
+</div>
+
+<div style=" margin-top:50px">
+<font class="listFont">模块一</font><br/>
+<hr style=" width:100%; height:2px; color:#000000;" />
+</div>
+
+<div id="modelDiv" style="width:100%;height:auto;margin-top:5px;display:flex;justify-content:space-between;align-items: center;">
+
+<div id="modelDiv1" style="width:200px; height:200px; border:1px solid #000000"><img src="model.png" alt="model" width="200px" height="200px" /></div>
+
+<div id="modelDiv2" style=" width:400px; height:200px; border:1px solid #000000;display:flex;justify-content:space-between;align-items: center;">
+
+<div style=" position:relative;margin-left:20px; margin-top:20px; width:auto">
+<div style="position:relative;background-color:#666666; margin-left:10px; margin-top:10px;" class="listFont">这是文案</div>
+<div style="position:relative;background-color:#666666; margin-left:10px; margin-top:10px;"  class="listFont">这是文案</div>
+</div>
+
+<div style=" position:relative;margin-left:20px; margin-top:20px">
+<div style="position:relative;background-color:#666666; margin-left:10px; margin-top:10px;" class="listFont">这是文案</div>
+<div style="position:relative;background-color:#666666; margin-left:10px; margin-top:10px;"  class="listFont">这是文案</div>
+</div>
+</div>
+
+<div id="modelDiv3" style=" width:400px; height:200px; border:1px solid #000000;display:flex;justify-content:space-between;align-items: center;">
+
+<div style=" position:relative;margin-left:20px; margin-top:20px; width:auto">
+<div style="position:relative;background-color:#666666; margin-left:10px; margin-top:10px;" class="listFont">这是文案</div>
+<div style="position:relative;background-color:#666666; margin-left:10px; margin-top:10px;"  class="listFont">这是文案</div>
+</div>
+
+<div style=" position:relative;margin-left:20px; margin-top:20px">
+<div style="position:relative;background-color:#666666; margin-left:10px; margin-top:10px;" class="listFont">这是文案</div>
+<div style="position:relative;background-color:#666666; margin-left:10px; margin-top:10px;"  class="listFont">这是文案</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+<div style="margin-top:50px; width:100%; height:auto;">
+<font class="listFont">文章</font><br/>
+<hr style=" width:100%; height:2px; color:#000000;" />
+</div>
+
+
+<div id="articleDiv" style=" width:100%; height:auto;">
+
+<div style=" width:100%; height:auto">
+<font style=" margin-top:20px;color:#000000; text-align:center; font-size:22px; font:'微软雅黑'; font-weight:bold;">字号为22号的文章标题</font>
+</div>
+
+<div style=" margin-top:20px; width:100%; height:auto;display:flex;justify-content:space-between;align-items: center;">
+
+<div style=" width:auto; height:auto;"><img src="model.png" /></div>
+<div style=" width:auto; height:auto;"><img src="model.png" /></div>
+<div style=" width:auto; height:auto;"><img src="model.png" /></div>
+<div style=" width:auto; height:auto;"><img src="model.png" /></div>
+<div style=" width:auto; height:auto;"><img src="model.png" /></div>
+
+</div>
+
+<div style=" width:100%; height:auto; margin-top:10px;">
+<font style=" color:#333333; font-size:20px; font:'微软雅黑';">文章来源&nbsp;&nbsp;&nbsp;&nbsp;7分钟前</font>
+</div>
+
+</div>
+
+
+</div>
+</body>
+</html>
